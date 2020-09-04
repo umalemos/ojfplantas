@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="source.js">
+    <title>OJF Plantas</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img alt="logo folha OJF Plantas em tons de verde" src="/imagens/logo.png">
+        </div>
+        <ul>
+            <li> <a href="./index.html"> HOME</a></li>
+            <li> <a href="#"> SOBRE</a></li>
+            <li> <a href="#"> GALERIA</a></li>
+            <li> <a href="#"> CONTATO</a></li>
+        </ul>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="imagens/home-2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="imagens/home-1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="imagens/logo.png" style="width:100%">
+        </div>
+    </div>
+
+    link https://wa.me/55019999612050
+</body>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+
+</html>

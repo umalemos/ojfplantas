@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+#logo img {
+    max-width:200px ;
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li a{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #016933;
+    margin: 0 27px;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+header ul li a:active, header ul li a:hover, header ul li:hover{
+    color: #02ad55;
+    transform: scale(1.1);
+}
+
+
+/*SlideShow Home */
+.active {
+    background-color: #717171;
+  }
+
+.mySlides {
+    display: none; 
+    width: 100%;
+    max-height: 700px;
+    min-height: 200px;
+}
+
+.mySlides img {
+    max-width:100%;
+    max-height:100%; 
+    object-fit: cover;
+    vertical-align: baseline;
+}
+
+.slideshow-container {
+    z-index: -1;
+    position: absolute;
+    margin: auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
